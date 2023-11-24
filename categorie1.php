@@ -18,10 +18,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="home.php">Home</a>
+            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.php">log out</a>
+            <a class="nav-link" href="#">log out</a>
           </li>
           
         </ul>
@@ -30,25 +30,13 @@
   </nav>
 
 
-  <form class="mb-4 mx-auto p-4" style="width: 300px;">
-    <div class="row">
-        <div class="col-md-12">
-            <label for="productCategory" class="form-label">Catégorie du produit :</label>
-            <select class="form-select" id="productCategory">
-                <option value="" >Toutes les Produit</option>
-                <option value="categorie1.php" >Catégorie 1</option>
-                <option value="categorie2.php" >Catégorie 2</option>
-            </select>
-        </div>
-    </div>
-</form>
 
 
 <div class="container me-5">
   <div class="row g-3 mb-5">
     <div class="col-4">
       <div class="card" style="width: 18rem;">
-        <img src="image/tswira7.jpg" class="card-img-top" alt="Card image">
+        <img src="image/tswira9.jpg" class="card-img-top" alt="Card image">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">1000 Dh</p>
@@ -60,7 +48,7 @@
 
       <div class="col-4">
         <div class="card" style="width: 18rem;">
-          <img src="image/Rectangle 2.png" class="card-img-top" alt="Card image">
+          <img src="image/tswira8.jpg" class="card-img-top" alt="Card image">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">850 Dh</p>
@@ -71,7 +59,7 @@
 
       <div class="col-4">
         <div class="card" style="width: 18rem;">
-          <img src="image/tswira6.jpg" class="card-img-top" alt="Card image">
+          <img src="image/tswira7.jpg" class="card-img-top" alt="Card image">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">745 Dh.</p>
@@ -83,7 +71,7 @@
 
       <div class="col-4">
         <div class="card" style="width: 18rem;">
-          <img src="image/tswira5.jpg" class="card-img-top" alt="Card image">
+          <img src="image/tswira6.jpg" class="card-img-top" alt="Card image">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">1000 Dh</p>
@@ -94,7 +82,7 @@
 
       <div class="col-4">
         <div class="card" style="width: 18rem;">
-          <img src="image/Rectangle 6.png" class="card-img-top" alt="Card image">
+          <img src="image/tswira5.jpg" class="card-img-top" alt="Card image">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text"><p style="color: red;">800 Dh</p><s>950 Dh</s></p>

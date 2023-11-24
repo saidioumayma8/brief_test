@@ -18,10 +18,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="home.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">log out</a>
+            <a class="nav-link" href="index.php">log out</a>
           </li>
           
         </ul>
@@ -30,18 +30,25 @@
   </nav>
 
 
-<form class="mb-4">
-      <div class="row">
-        <div class="col-md-6">
-          <label for="productCategory" class="form-label">Catégorie du produit :</label>
-          <select class="form-select" id="productCategory">
-            <option value="">Toutes les Produit</option>
-            <option value="category1">Catégorie 1</option>
-            <option value="category2">Catégorie 2</option>
-          </select>
+    <form class="mb-4 mx-auto p-4" style="width: 300px;">
+        <div class="row">
+            <div class="col-md-12">
+                <label for="productCategory" class="form-label">Catégorie du produit :</label>
+                <select class="form-select" id="productCategory">
+                    <option value="" >Toutes les Produit</option>
+                    <option value="categorie1.php" >Catégorie 1</option>
+                      <option value="categorie2.php" >Catégorie 2</option>
+                </select>
+            </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-primary">Ajouter Produit</button>
+            <button type="button" class="btn btn-secondary">Notifications</button>
         </div>
-      </div>
+    </div>
     </form>
+
 
 <div class="container me-5">
   <div class="row g-3 mb-5">
@@ -126,27 +133,28 @@
        
           
       </div>
-      <div class="container my-10">
+    <div class="container my-10 d-flex justify-content-center">
         <nav aria-label="page navigation example">
-          <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="#"><span aria-hidden="true">&laquo;</span></a></li>
-              <li class="page-item"><a class="page-link" href="home.php"> 1</a></li>
-              <li class="page-item"><a class="page-link" href="home1.php"> 2</a></li>
-              <li class="page-item"><a class="page-link" href="#"><span aria-hidden="true">&raquo;</span></a></li>
-          </ul>
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#"><span aria-hidden="true">&laquo;</span></a></li>
+                <li class="page-item"><a class="page-link" href="home.php"> 1</a></li>
+                <li class="page-item"><a class="page-link" href="home1.php"> 2</a></li>
+                <li class="page-item"><a class="page-link" href="#"><span aria-hidden="true">&raquo;</span></a></li>
+            </ul>
         </nav>
-      </div>
+    </div>
 
 
 
-      <table class="table">
+
+    <table class="table">
   <caption>List of users</caption>
   <thead>
     <tr>
       <th scope="col">Id</th>
       <th scope="col">Email</th>
-      <th scope="col">password</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Password</th>
+      <th scope="col">Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -154,22 +162,32 @@
       <th scope="row">1</th>
       <td>Mark@gmail.com</td>
       <td>Otto</td>
-      <td><a href="#" class="btn btn-primary">Accepter</a><a href="#" class="btn btn-primary">suppremier</a></td>
+      <td>
+        <a href="#" class="btn btn-primary me-2">Accepter</a>
+        <a href="#" class="btn btn-primary">Supprimer</a>
+      </td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Jacob@gmail.com</td>
       <td>Thornton</td>
-      <td><a href="#" class="btn btn-primary">Accepter</a><a href="#" class="btn btn-primary">suppremier</a></td>
+      <td>
+        <a href="#" class="btn btn-primary me-2">Accepter</a>
+        <a href="#" class="btn btn-primary">Supprimer</a>
+      </td>
     </tr>
     <tr>
       <th scope="row">3</th>
       <td>Larry@gmail.com</td>
       <td>the Bird</td>
-      <td><a href="#" class="btn btn-primary">Accepter</a><a href="#" class="btn btn-primary">suppremier</a></td>
+      <td>
+        <a href="#" class="btn btn-primary me-2">Accepter</a>
+        <a href="#" class="btn btn-primary">Supprimer</a>
+      </td>
     </tr>
   </tbody>
 </table>
+
 
 
       <!-- Footer -->
