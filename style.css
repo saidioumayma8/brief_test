@@ -5,7 +5,7 @@
     margin: 0;
     box-sizing: border-box
 }
-/*  
+ 
 body {
     background-color: #ffffff;
     height: 100vh;
@@ -139,7 +139,7 @@ a:hover {
 }
 .input-field {
     margin-bottom: 10px; /* Adjust the margin as needed */
-
+}
 
 @media(max-width: 575px) {
     .wrapper {
