@@ -3,21 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="shortcut icon" type="x-icon" href="image/A tech logo,circuit logo.png">
-    <link rel="stylesheet" href="./style.css">
     <title>ElectroNaser</title>
 </head>
 <body>
-    <?php 
-    if(isset($_POST['ajouter'])){
+
+<?php include'inclode/nav.php'?>
+
+<?php 
+    if(isset($_POST['connexion'])){
         $login = $_POST['login'];
         $pwd = $_POST['password'];
 
         if(!empty($login) && !empty($pwd)){
             require_once 'inclode/database.php';
-            $pdo->prepare(query: 'INSERT INTO user VALUES(?,?,?)');
-            $sqlState->execute([$login,$pad,$date]);
-            header( header: 'location: connexion.php');
+            $sqlstaet = $pdo->prepare(query: 'SELECT * FROM utilisateur
+                                            WHERE LOGIN=?
+                                            AND password=?');
+            $sqlState->execute([$login,$pwd]);
+            if($sqlState->rewCount()>=1){
+            session_start();
+            S_SESSION['utilisateure'] = $sglstate->fetch();
+            header(header: 'location: home.php');
+        }else{
+            ?>
+            <div class="alert alert-danger" role="alert">
+                login ou password incorrectes.
+            </div>
+            <?php
+        }
         }else{
             ?>
             <div class="alert alert-danger" role="alert">

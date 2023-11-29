@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap');
 
 * {
+    font-family: "Ubuntu", sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box
