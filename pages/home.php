@@ -9,47 +9,22 @@
     <title>ElectroNaser</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a  class="h2 text-center mt-5 mb-4"href="#">ElectroNaser</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="home.php">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.php">log out</a>
-          </li>
-          
-        </ul>
-      </div>
-    </div>
-  </nav>
+
+<?php include'inclode/nav.php'?>
 
 
-    <form class="mb-4 mx-auto p-4" style="width: 300px;">
-        <div class="row">
-            <div class="col-md-12">
-                <label for="productCategory" class="form-label">Catégorie du produit :</label>
-                <select class="form-select" id="productCategory">
-                    <option value="" >Toutes les Produit</option>
-                    <option value="categorie1.php" >Catégorie 1</option>
-                      <option value="categorie2.php" >Catégorie 2</option>
-                </select>
-            </div>
-    </div>
-    <div class="row mt-3">
+  <form class="mb-4 mx-auto p-4" style="width: 300px;">
+    <div class="row">
         <div class="col-md-12">
-            <button type="button" class="btn btn-primary">Ajouter Produit</button>
-            <button type="button" class="btn btn-secondary">Notifications</button>
+            <label for="productCategory" class="form-label">Catégorie du produit :</label>
+            <select class="form-select" id="productCategory">
+                <option value="" >Toutes les Produit</option>
+                <option value="categorie1.php" >Catégorie 1</option>
+                <option value="categorie2.php" >Catégorie 2</option>
+            </select>
         </div>
     </div>
-    </form>
-
-
+</form>
 <div class="container me-5">
   <div class="row g-3 mb-5">
     <div class="col-4">
@@ -58,9 +33,7 @@
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">1000 Dh</p>
-          <a href="#" class="btn btn-primary">Modifier</a>
-          <a href="#" class="btn btn-primary">supprimer</a>
-
+          <a href="#" class="btn btn-primary">Buy Now</a>
         </div>
       </div>
     </div>
@@ -72,22 +45,18 @@
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">850 Dh</p>
-            <a href="#" class="btn btn-primary">Modifier</a>
-            <a href="#" class="btn btn-primary">supprime</a>
-
+            <a href="#" class="btn btn-primary">Buy Now</a>
           </div>
         </div>
       </div>
 
       <div class="col-4">
         <div class="card" style="width: 18rem;">
-          <img src="image/tswira8.jpg" class="card-img-top" alt="Card image">
+          <img src="image/Rectangle 9.png" class="card-img-top" alt="Card image">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">745 Dh.</p>
-            <a href="#" class="btn btn-primary">Modifier</a>
-            <a href="#" class="btn btn-primary">supprime</a>
-
+            <a href="#" class="btn btn-primary">Buy Now</a>
           </div>
         </div>
       </div>
@@ -95,98 +64,51 @@
 
       <div class="col-4">
         <div class="card" style="width: 18rem;">
-          <img src="image/tswira8.jpg" class="card-img-top" alt="Card image">
+          <img src="image/tswira1.jpg" class="card-img-top" alt="Card image">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">1000 Dh</p>
-            <a href="#" class="btn btn-primary">Modifier</a>
-            <a href="#" class="btn btn-primary">supprime</a>
-
+            <a href="#" class="btn btn-primary">Buy Now</a>
           </div>
         </div>
       </div>
 
       <div class="col-4">
         <div class="card" style="width: 18rem;">
-          <img src="image/tswira8.jpg" class="card-img-top" alt="Card image">
+          <img src="image/tswira3.jpg" class="card-img-top" alt="Card image">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text"><p style="color: red;">800 Dh</p><s>950 Dh</s></p>
-            <a href="#" class="btn btn-primary">Modifier</a>
-            <a href="#" class="btn btn-primary">supprime</a>
-
+            <a href="#" class="btn btn-primary">Buy Now</a>
           </div>
         </div>
       </div>
 
 <div class="col-4">
         <div class="card" style="width: 18rem;">
-          <img src="image/tswira8.jpg" class="card-img-top" alt="Card image">
+          <img src="image/Rectangle 3.png" class="card-img-top" alt="Card image">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">850 Dh</p>
-            <a href="#" class="btn btn-primary">Modifier</a>
-            <a href="#" class="btn btn-primary">supprime</a>
+            <a href="#" class="btn btn-primary">Buy Now</a>
           </div>
         </div>
       </div>
        
           
       </div>
-    <div class="container my-10 d-flex justify-content-center">
-        <nav aria-label="page navigation example">
-            <ul class="pagination">
-                <li class="page-item"><a class="page-link" href="#"><span aria-hidden="true">&laquo;</span></a></li>
-                <li class="page-item"><a class="page-link" href="home.php"> 1</a></li>
-                <li class="page-item"><a class="page-link" href="home1.php"> 2</a></li>
-                <li class="page-item"><a class="page-link" href="#"><span aria-hidden="true">&raquo;</span></a></li>
-            </ul>
-        </nav>
-    </div>
+      <div class="container my-10 d-flex justify-content-center">
+          <nav aria-label="page navigation example">
+              <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#"><span aria-hidden="true">&laquo;</span></a></li>
+                  <li class="page-item"><a class="page-link" href="home.php"> 1</a></li>
+                  <li class="page-item"><a class="page-link" href="home1.php"> 2</a></li>
+                  <li class="page-item"><a class="page-link" href="#"><span aria-hidden="true">&raquo;</span></a></li>
+              </ul>
+          </nav>
+      </div>
 
 
-
-
-    <table class="table">
-  <caption>List of users</caption>
-  <thead>
-    <tr>
-      <th scope="col">Id</th>
-      <th scope="col">Email</th>
-      <th scope="col">Password</th>
-      <th scope="col">Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark@gmail.com</td>
-      <td>Otto</td>
-      <td>
-        <a href="#" class="btn btn-primary me-2">Accepter</a>
-        <a href="#" class="btn btn-primary">Supprimer</a>
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob@gmail.com</td>
-      <td>Thornton</td>
-      <td>
-        <a href="#" class="btn btn-primary me-2">Accepter</a>
-        <a href="#" class="btn btn-primary">Supprimer</a>
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry@gmail.com</td>
-      <td>the Bird</td>
-      <td>
-        <a href="#" class="btn btn-primary me-2">Accepter</a>
-        <a href="#" class="btn btn-primary">Supprimer</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
 
 
 

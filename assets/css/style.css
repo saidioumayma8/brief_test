@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap');
+body{
+    background-color:rgb(182, 205, 242);
+}
+#form{
+    background-color: white;
+    width: 25%;
+    margin: 120px auto;
+    padding: 50px;
+    box-shadow: 10px 10px 5px rgb(78, 133, 177);
+    border-radius: 6px;
+}
+#btn{
+    color: rgb(0, 0, 0);
+    background-color: rgb(182, 205, 242);
+    padding: 10px;
+    font-size: large;
+    border-radius: 10px;
+
+}
+@media screen and(max-width:700px){
+    #form{
+        width: 65%;
+        padding: 40px;
+    }
+
+}
+
+.card-img-top{
+    border-radius: 50px;
+    padding: 20px;
+}
+.card{
+    border-radius: 30px;
+}
+button.btn-success {
+    background-color: rgb(79, 79, 241) !important;
+    color: white;
+}
+
+

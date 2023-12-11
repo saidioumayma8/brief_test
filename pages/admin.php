@@ -9,10 +9,27 @@
     <title>ElectroNaser</title>
 </head>
 <body>
+
 <?php include'inclode/nav.php'?>
 
+<a href="adminh.php" class="btn btn-primary me-2">users</a>
+        <a href="admin.php" class="btn btn-primary">produit</a> 
+  <form class="mb-4 mx-auto p-4" style="width: 300px;">
+    <div class="row">
+        <div class="col-md-12">
+            <label for="productCategory" class="form-label">Catégorie du produit :</label>
+            <select class="form-select" id="productCategory">
+                <option value="" >Toutes les Produit</option>
+                <option value="categorie1.php" >Catégorie 1</option>
+                <option value="categorie2.php" >Catégorie 2</option>
+            </select>
+        </div>
+    </div>
+</form>
 
-
+<a href="#" class="btn btn-primary">add</a>
+<a href="#" class="btn btn-primary">supprimer</a>
+<a href="#" class="btn btn-primary">supprimer</a>
 
 <div class="container me-5">
   <div class="row g-3 mb-5">
@@ -28,63 +45,30 @@
     </div>
 
 
-      <div class="col-4">
-        <div class="card" style="width: 18rem;">
-          <img src="image/tswira8.jpg" class="card-img-top" alt="Card image">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">850 Dh</p>
-            <a href="#" class="btn btn-primary">Buy Now</a>
+    <?php
+  $query = "SELECT * FROM products";
+  $result = mysqli_query($conn, $query);
+  ?>
+  <div class="container me-5" id="cardContainer">
+    <div class="row g-3 mb-5">
+      <?php
+      while ($row = mysqli_fetch_assoc($result)) {
+      ?>
+        <div class="col-4 card <?php echo $row['category']; ?>" data-category="<?php echo $row['category']; ?>">
+          <div class="card" style="width: 18rem;">
+            <img src="image/tswira9.jpg" class="card-img-top" alt="Card image">
+            <div class="card-body">
+              <h5 class="card-title"><?php echo $row['libelle']; ?></h5>
+              <p class="card-text"><?php echo $row['prix_unitaire']; ?> dh</p>
+              <p class="card-text"><?php echo $row['categorie']; ?></p>
+            <a href="#" class="btn btn-primary">supprimer</a>
           </div>
         </div>
       </div>
-
-      <div class="col-4">
-        <div class="card" style="width: 18rem;">
-          <img src="image/tswira7.jpg" class="card-img-top" alt="Card image">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">745 Dh.</p>
-            <a href="#" class="btn btn-primary">Buy Now</a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-4">
-        <div class="card" style="width: 18rem;">
-          <img src="image/tswira6.jpg" class="card-img-top" alt="Card image">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">1000 Dh</p>
-            <a href="#" class="btn btn-primary">Buy Now</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-4">
-        <div class="card" style="width: 18rem;">
-          <img src="image/tswira5.jpg" class="card-img-top" alt="Card image">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"><p style="color: red;">800 Dh</p><s>950 Dh</s></p>
-            <a href="#" class="btn btn-primary">Buy Now</a>
-          </div>
-        </div>
-      </div>
-
-<div class="col-4">
-        <div class="card" style="width: 18rem;">
-          <img src="image/tswira4.jpg" class="card-img-top" alt="Card image">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">850 Dh</p>
-            <a href="#" class="btn btn-primary">Buy Now</a>
-          </div>
-        </div>
-      </div>
-       
-          
+      <?php } ?>
+    </div>
+  </div>
+  
       </div>
       <div class="container my-10 d-flex justify-content-center">
           <nav aria-label="page navigation example">
