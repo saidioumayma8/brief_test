@@ -11,8 +11,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.php">log out</a>
-          </li>
-          
+          </li>  
         </ul>
       </div>
     </div>
