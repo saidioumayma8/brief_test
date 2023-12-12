@@ -1,5 +1,5 @@
 <?php
-    include("connection.php")
+    include("../config/connection.php")
 ?>
 
 <!DOCTYPE html>
@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <title>ElectroNaser</title>
 </head>
 <body>   
@@ -25,7 +25,10 @@
 
         <label>Retype Password</label>
            <input type="password" id="cpass" name="cpass" required></br></br>
-        
+           <h4>i have a conte ?<a href="./index.php">login</a></h4>
+
+        <input type="submit" id="btn" value="sign up" name="submit">
+
         </div>
         <script>
             function isvalid(){

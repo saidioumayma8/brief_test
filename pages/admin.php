@@ -70,29 +70,28 @@ if ($result === false) {
   </thead>
   <tbody>
     <?php 
-    $sql = 'SELECT * FROM product;
-    ';
- $result = $conn->query($sql);
- if ($result) {
-     while ($row = $result->fetch_assoc()) {
-    ?>
-    <tr>
-      <td><?= $row['reference'];?></td>
-      <td><?= $row['name_prod'];?></td>
-      <td><?= $row['image_prod'];?></td>
-      <td><?= $row['codebar'];?></td>
-      <td><?= $row['price_init'];?>Dh</td>
-      <td><?= $row['price_fin'];?>Dh</td>
-      <td><?= $row['reduc'];?></td>
-      <td><?= $row['description'];?></td>
-      <td><?= $row['quantite_min'];?></td>
-      <td><?= $row['quantite_stock'];?></td>
-      <td><?= $row['fk_idcat'];?></td>
-      <td>
-      <a href="../includes/updat.php" class="btn btn-primary me-2">Update</a>
-      <a href="../includes/delete.inc.php" class="btn btn-primary">Supprimer</a>
-
-      </td>
+    $sql = 'SELECT * FROM product';
+    $result = $conn->query($sql);
+    if ($result) {
+        while ($row = $result->fetch_assoc()) {
+       ?>
+       <tr>
+         <td><?= $row['reference'];?></td>
+         <td><?= $row['name_prod'];?></td>
+         <td><?= $row['image_prod'];?></td>
+         <td><?= $row['codebar'];?></td>
+         <td><?= $row['price_init'];?>Dh</td>
+         <td><?= $row['price_fin'];?>Dh</td>
+         <td><?= $row['reduc'];?></td>
+         <td><?= $row['description'];?></td>
+         <td><?= $row['quantite_min'];?></td>
+         <td><?= $row['quantite_stock'];?></td>
+         <td><?= $row['fk_idcat'];?></td>
+         <td>
+         <a href="../includes/updat.php" class="btn btn-primary me-2">Update</a>
+         <a href="../includes/delete.inc.php" class="btn btn-primary">Supprimer</a>
+    
+         </td>
  <?php 
       }
     }

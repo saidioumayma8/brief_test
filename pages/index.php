@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <title>ElectroNaser</title>
 </head>
 <body>   
@@ -20,6 +20,8 @@
            <input type="text" id="user" name="user"></br></br>
              <label>Password: </label>
            <input type="Password" id="pass" name="pass"></br></br>
+           <h4>i dont have a conte ?<a href="./signup.php"> sign up</a></h4>
+
         <input type="submit" id="btn" value="Login" name="submit">
         </div>
         <script>
